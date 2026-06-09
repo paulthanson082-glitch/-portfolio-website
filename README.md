@@ -27,6 +27,17 @@ The site should be available at:
 
 > Note: GitHub Pages may require a moment to publish after the first workflow run.
 
+## Custom domain
+
+If you want to use a custom domain:
+
+1. Add a `CNAME` file at the repository root containing your domain, for example:
+   ```
+   www.example.com
+   ```
+2. Configure the same domain in your DNS provider using a `CNAME` record to `username.github.io`.
+3. Confirm the custom domain in GitHub Pages settings.
+
 ## Notes
 
 - Update `index.html` with your real projects and contact info.
