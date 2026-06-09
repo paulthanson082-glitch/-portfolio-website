@@ -29,14 +29,14 @@ The site should be available at:
 
 ## Custom domain
 
-If you want to use a custom domain:
+This repo now includes a `CNAME` file pointing to:
 
-1. Add a `CNAME` file at the repository root containing your domain, for example:
-   ```
-   www.example.com
-   ```
-2. Configure the same domain in your DNS provider using a `CNAME` record to `username.github.io`.
-3. Confirm the custom domain in GitHub Pages settings.
+`paulhanson.design`
+
+To complete the setup:
+
+1. Configure a `CNAME` record in your DNS provider to `paulthanson082-glitch.github.io`.
+2. Confirm the custom domain in GitHub Pages settings.
 
 ## Notes
 
