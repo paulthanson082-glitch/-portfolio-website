@@ -17,6 +17,20 @@ npm run build
 npm run preview
 ```
 
+## Desktop App
+
+This site now includes a macOS desktop wrapper and iPad-friendly install support.
+
+```bash
+npm install
+npm run app      # build and launch the desktop app
+npm run dist     # build installable app packages into release/
+```
+
+## iPad App Support
+
+Open the site in Safari on your iPad and use Share → Add to Home Screen. The site is configured as a standalone PWA with an Apple touch icon and manifest.
+
 ## Deployment
 
 This repository is configured to automatically deploy to GitHub Pages when code is pushed to `main`.

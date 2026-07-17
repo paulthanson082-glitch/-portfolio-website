@@ -1,13 +1,39 @@
 {
   "name": "paul-hanson-portfolio",
   "private": true,
+  "version": "0.0.0",
+  "description": "Portfolio website wrapped as a macOS desktop app and iPad-friendly PWA.",
+  "author": "Paul T Hanson",
   "type": "module",
+  "main": "electron.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "app": "npm run build && electron .",
+    "dist": "electron-builder --publish never"
   },
   "devDependencies": {
+    "electron": "^43.1.1",
+    "electron-builder": "^24.7.0",
     "vite": "^5.4.2"
+  },
+  "build": {
+    "appId": "com.paulhanson.portfolio",
+    "productName": "Paul Hanson Portfolio",
+    "directories": {
+      "buildResources": "build",
+      "output": "release"
+    },
+    "win": {
+      "target": ["nsis"]
+   },
+     "mac": {
+      "target": ["dir"],
+      "identity": null
+    },
+    "linux": {
+      "target": ["AppImage"]
+    }
   }
 }
